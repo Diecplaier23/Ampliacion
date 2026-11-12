@@ -1,5 +1,3 @@
-package Ampliacion;
-
 import java.util.Scanner;
 
 public class LlenandoPiscinas {

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ejercicio9 {
+public class EscaleraDeColor {
     public static void main(String[] args) {
         int num;
         int a[] = new int[4];

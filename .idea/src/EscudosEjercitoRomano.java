@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio6 {
+public class EscudosEjercitoRomano {
     public static void main(String[] args) {
         int soldados;
         System.out.println("Introduce el numero de soldados:");
