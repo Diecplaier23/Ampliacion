@@ -19,8 +19,6 @@ public class NumerosVampiro {
                 a[i] = Integer.parseInt(String.valueOf(num).substring(i,i+1));
             }
 
-
-
             for (int i = 0; i < n_cifras; i++) {
                 for    (int j = 0; j < n_cifras; j++) {
                     if (i != j) {
@@ -39,4 +37,3 @@ public class NumerosVampiro {
         }
     }
 }
-

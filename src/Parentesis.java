@@ -24,16 +24,15 @@ public class Parentesis {
             System.out.print(V + "La frase está bien parentizada" + RS + "\n");
         }
     }
-
     public static boolean esParentizada(String frase) {
         int contador = 0;
 
         for (int i = 0; i < frase.length(); i++) {
 
-            if (frase.charAt(i) == '(') {
+            if (frase.charAt(i) == '(' || frase.charAt(i) == '[' || frase.charAt(i) == '{') {
                 contador++;
 
-            } else if (frase.charAt(i) == ')') {
+            } else if (frase.charAt(i) == ')' || frase.charAt(i) == ']' || frase.charAt(i) == '}') {
                 contador--;
 
                 // Hay un paréntesis de cierre sin apertura
@@ -42,7 +41,6 @@ public class Parentesis {
                 }
             }
         }
-
         // Todos los paréntesis deben estar correctamente cerrados
         return contador == 0;
     }

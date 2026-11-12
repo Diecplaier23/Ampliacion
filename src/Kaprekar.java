@@ -2,17 +2,22 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Kaprekar {
+    public static final String R = "\u001B[31m";
+    public static final String V = "\u001B[32m";
+    public static final String A = "\u001B[33m";
+    public static final String RS = "\u001B[0m";
+
     public static void main(String[] args) {
         int kaprekar = 6174;
         int num, a1, a2, a3, a4, iteraciones = 0;
         int[] arr = new int[4];
     //Pedir numero al usuario
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce un numero de 4 cifras para comprobar si es un numero de Kaprekar:");
+        System.out.println(V + "Introduce un numero de 4 cifras para comprobar si es un numero de Kaprekar:" + RS);
         num = sc.nextInt();
     //Comprobar si el numero es de 4 cifras como maximo
         if (num > 9999) {
-            System.out.println("El numero introducido es demasiado grande");
+            System.out.println(R + "El numero introducido es demasiado grande" + RS);
     //Comprobar si el numero es como minimo de 4 cifras, si no añairle 0s
         } else if (num <10){ num= num*1000;}
         else if (num <100){ num= num*100;}
@@ -47,15 +52,15 @@ public class Kaprekar {
 
                     num = num_desc - num_asc;
                     if (num<1000){num=num*10;}
-                    System.out.println(num);
+                    System.out.println(A + num + RS);
                     iteraciones++;
                     }
     //mostrar erros si el numero no es de almenos dos numeros diferentes, lo comprobamos en el if de arriba
             } else {
-                    System.out.println("El numero introducido no tiene almenos 2 cifras direfernestes");
+                    System.out.println(R + "El numero introducido no tiene almenos 2 cifras direfernestes" + RS);
 
     //mostrar por panalla el numero de interaciones que ha echo el programa nates de que el numero se comvierta en kaprekar
 
-            }System.out.println("Numnero de iteraciones:" + iteraciones);
+            }System.out.println(V + "Numnero de iteraciones: " + A + iteraciones + RS);
         }
     }
