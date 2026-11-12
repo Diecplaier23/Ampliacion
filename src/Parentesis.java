@@ -30,10 +30,10 @@ public class Parentesis {
 
         for (int i = 0; i < frase.length(); i++) {
 
-            if (frase.charAt(i) == '(' || frase.charAt(i) == '{' || frase.charAt(i) == '[') {
+            if (frase.charAt(i) == '(') {
                 contador++;
 
-            } else if (frase.charAt(i) == ')' || frase.charAt(i) == '}' || frase.charAt(i) == ']') {
+            } else if (frase.charAt(i) == ')') {
                 contador--;
 
                 // Hay un paréntesis de cierre sin apertura
