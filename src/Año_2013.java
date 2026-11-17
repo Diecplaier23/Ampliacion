@@ -21,8 +21,7 @@ public class Año_2013 {
             return;
         }
         int año = siguienteAño(año_inicial);
-        System.out.print(V + "Desde el " + B + año_inicial
-                + V + " hasta el " + B + año + RS + "\n");
+        System.out.print(V + "Desde el " + B + año_inicial + V + " hasta el " + B + año + RS + "\n");
     }
     public static int siguienteAño(int año) {
         boolean repetido;
